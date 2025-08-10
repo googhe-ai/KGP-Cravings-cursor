@@ -1,0 +1,160 @@
+{
+  "restaurants": [
+    {
+      "id": "r1",
+      "name": "Spice Garden",
+      "rating": 4.5,
+      "cuisine": ["North Indian", "Tandoori"],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop",
+      "location": { "lat": 28.6139, "lng": 77.2090 },
+      "featured": true,
+      "menu": [
+        {
+          "id": "m1",
+          "name": "Butter Chicken",
+          "priceLocal": 320,
+          "category": "North Indian",
+          "featured": true,
+          "compare": { "zomato": 350, "swiggy": 345 },
+          "image": "https://images.unsplash.com/photo-1604908554049-1e8be26f9c51?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "m2",
+          "name": "Paneer Tikka",
+          "priceLocal": 240,
+          "category": "Tandoori",
+          "compare": { "zomato": 260, "swiggy": 255 },
+          "image": "https://images.unsplash.com/photo-1604908177075-83b51b113f03?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "m3",
+          "name": "Garlic Naan",
+          "priceLocal": 60,
+          "category": "Bread",
+          "compare": { "zomato": 70, "swiggy": 65 },
+          "image": "https://images.unsplash.com/photo-1617195737496-e0b43b77fff8?q=80&w=1200&auto=format&fit=crop"
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "Bombay Bites",
+      "rating": 4.3,
+      "cuisine": ["Street Food", "Maharashtrian"],
+      "image": "https://images.unsplash.com/photo-1625944526079-8de297cf8a37?q=80&w=1200&auto=format&fit=crop",
+      "location": { "lat": 19.0760, "lng": 72.8777 },
+      "featured": true,
+      "menu": [
+        {
+          "id": "m1",
+          "name": "Vada Pav",
+          "priceLocal": 35,
+          "category": "Street Food",
+          "featured": true,
+          "compare": { "zomato": 45, "swiggy": 40 },
+          "image": "https://images.unsplash.com/photo-1601050690597-9a0f29a811c2?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "m2",
+          "name": "Pav Bhaji",
+          "priceLocal": 140,
+          "category": "Street Food",
+          "compare": { "zomato": 160, "swiggy": 155 },
+          "image": "https://images.unsplash.com/photo-1625945650499-70f5d0e78113?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "m3",
+          "name": "Sabudana Khichdi",
+          "priceLocal": 120,
+          "category": "Maharashtrian",
+          "compare": { "zomato": 135, "swiggy": 130 },
+          "image": "https://images.unsplash.com/photo-1625945101789-780e41793097?q=80&w=1200&auto=format&fit=crop"
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "Sushi Kaze",
+      "rating": 4.6,
+      "cuisine": ["Japanese", "Seafood"],
+      "image": "https://images.unsplash.com/photo-1562152810-1a86c58e9ac2?q=80&w=1200&auto=format&fit=crop",
+      "location": { "lat": 12.9716, "lng": 77.5946 },
+      "featured": false,
+      "menu": [
+        {
+          "id": "m1",
+          "name": "California Roll",
+          "priceLocal": 420,
+          "category": "Sushi",
+          "compare": { "zomato": 450, "swiggy": 440 },
+          "image": "https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "m2",
+          "name": "Salmon Nigiri",
+          "priceLocal": 380,
+          "category": "Sushi",
+          "compare": { "zomato": 410, "swiggy": 400 },
+          "image": "https://images.unsplash.com/photo-1553621042-33b8f06e82ba?q=80&w=1200&auto=format&fit=crop"
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "name": "Pasta Piazza",
+      "rating": 4.2,
+      "cuisine": ["Italian", "Pasta"],
+      "image": "https://images.unsplash.com/photo-1523475496153-3d6cc0f0d29f?q=80&w=1200&auto=format&fit=crop",
+      "location": { "lat": 13.0827, "lng": 80.2707 },
+      "featured": true,
+      "menu": [
+        {
+          "id": "m1",
+          "name": "Alfredo Pasta",
+          "priceLocal": 260,
+          "category": "Pasta",
+          "compare": { "zomato": 290, "swiggy": 285 },
+          "image": "https://images.unsplash.com/photo-1604908554140-1bfcac0104d2?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "m2",
+          "name": "Margherita Pizza",
+          "priceLocal": 300,
+          "category": "Pizza",
+          "featured": true,
+          "compare": { "zomato": 340, "swiggy": 335 },
+          "image": "https://images.unsplash.com/photo-1548365328-8b1f8c02d7fe?q=80&w=1200&auto=format&fit=crop"
+        }
+      ]
+    },
+    {
+      "id": "r5",
+      "name": "Green Bowl",
+      "rating": 4.4,
+      "cuisine": ["Healthy", "Salads"],
+      "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?q=80&w=1200&auto=format&fit=crop",
+      "location": { "lat": 22.5726, "lng": 88.3639 },
+      "featured": false,
+      "menu": [
+        {
+          "id": "m1",
+          "name": "Quinoa Salad",
+          "priceLocal": 230,
+          "category": "Salads",
+          "compare": { "zomato": 260, "swiggy": 255 },
+          "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "m2",
+          "name": "Grilled Chicken Bowl",
+          "priceLocal": 280,
+          "category": "Healthy",
+          "featured": true,
+          "compare": { "zomato": 310, "swiggy": 305 },
+          "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop"
+        }
+      ]
+    }
+  ],
+  "foods": []
+}
