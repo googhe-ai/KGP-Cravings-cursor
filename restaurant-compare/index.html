@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodScout — Restaurant & Menu Price Compare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="#home">
+        <img src="./assets/logo.svg" alt="FoodScout" class="logo"/>
+        <span>FoodScout</span>
+      </a>
+      <nav class="nav-tabs" aria-label="Primary">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#category">Category</a>
+        <a class="nav-link" href="#foods">Foods</a>
+        <a class="nav-link" href="#restros">Restros</a>
+        <a class="nav-link" href="#contact">Contact Us</a>
+      </nav>
+      <button class="mobile-menu" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section home-section">
+      <div class="container">
+        <h1>Discover restaurants, menus, and the best prices</h1>
+        <p class="subtitle">Compare menu prices across platforms like Zomato and Swiggy, and find nearby locations.</p>
+
+        <div class="split">
+          <div class="panel">
+            <h2>Famous Restros</h2>
+            <div id="famous-restros" class="card-grid"></div>
+          </div>
+          <div class="panel">
+            <h2>Famous Foods</h2>
+            <div id="famous-foods" class="card-grid"></div>
+          </div>
+        </div>
+
+        <div class="contact-highlight">
+          <h3>Have a suggestion?</h3>
+          <p>Reach out via the Contact section below — we would love to hear from you.</p>
+          <a class="btn btn-dark" href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="category" class="section category-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Categories</h2>
+          <p>Explore cuisines and categories. Click to filter restaurants and foods.</p>
+        </div>
+        <div id="category-chips" class="chip-row"></div>
+      </div>
+    </section>
+
+    <section id="foods" class="section foods-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Foods</h2>
+          <div class="controls">
+            <input id="food-search" class="input" type="search" placeholder="Search foods..." aria-label="Search foods" />
+          </div>
+        </div>
+        <div id="food-grid" class="card-grid"></div>
+      </div>
+    </section>
+
+    <section id="restros" class="section restros-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Restaurants</h2>
+          <div class="controls">
+            <input id="restro-search" class="input" type="search" placeholder="Search restaurants..." aria-label="Search restaurants" />
+          </div>
+        </div>
+        <div id="restro-grid" class="card-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form" class="contact-form" onsubmit="return false;">
+          <div class="row">
+            <input class="input" type="text" placeholder="Your name" required />
+            <input class="input" type="email" placeholder="Your email" required />
+          </div>
+          <textarea class="input" rows="5" placeholder="Your message" required></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close" data-close>✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> FoodScout • Built for demo purposes</p>
+    </div>
+  </footer>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
